@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alex Rivera — Creative Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Noise Overlay -->
+  <div class="noise"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">AR<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#work" class="mobile-link">Work</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-tag reveal">✦ Available for work</div>
+      <h1 class="hero-title">
+        <span class="line reveal" style="--d:0.1s">CREATIVE</span>
+        <span class="line line-outline reveal" style="--d:0.3s">DEVELOPER</span>
+        <span class="line reveal" style="--d:0.5s">&amp; DESIGNER</span>
+      </h1>
+      <p class="hero-sub reveal" style="--d:0.65s">
+        I craft digital experiences that people remember.<br/>
+        Based in San Francisco · Open to remote.
+      </p>
+      <div class="hero-cta reveal" style="--d:0.8s">
+        <a href="#work" class="btn btn-primary">View Work</a>
+        <a href="#contact" class="btn btn-ghost">Let's Talk →</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-counter">
+      <div class="counter-item"><span class="count" data-target="42">0</span><small>Projects</small></div>
+      <div class="counter-item"><span class="count" data-target="5">0</span><small>Years</small></div>
+      <div class="counter-item"><span class="count" data-target="28">0</span><small>Clients</small></div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-wrap">
+    <div class="marquee">
+      <span>UI/UX Design ✦ React &amp; Next.js ✦ Motion Design ✦ Node.js ✦ Creative Dev ✦ Branding ✦ Three.js ✦ TypeScript ✦ &nbsp;</span>
+      <span>UI/UX Design ✦ React &amp; Next.js ✦ Motion Design ✦ Node.js ✦ Creative Dev ✦ Branding ✦ Three.js ✦ TypeScript ✦ &nbsp;</span>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-left">
+          <div class="section-tag reveal">— Who I Am</div>
+          <h2 class="section-title reveal">I build things<br/>that <em>move</em> people.</h2>
+          <p class="about-text reveal">Hi, I'm Alex. A full-stack developer and designer obsessed with the intersection of code and creativity. I believe great software should feel as good as it works.</p>
+          <p class="about-text reveal">From pixel-perfect interfaces to high-performance backends — I bring ideas to life with precision and passion. Currently freelancing and taking on select projects.</p>
+          <a href="#" class="btn btn-primary reveal">Download CV ↓</a>
+        </div>
+        <div class="about-right reveal">
+          <div class="about-img-wrap">
+            <div class="about-img-placeholder">
+              <div class="img-initials">AR</div>
+              <div class="img-ring ring1"></div>
+              <div class="img-ring ring2"></div>
+              <div class="img-ring ring3"></div>
+            </div>
+            <div class="about-badge">🏆 Top Rated 2024</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section class="work section" id="work">
+    <div class="container">
+      <div class="section-tag reveal">— Selected Work</div>
+      <h2 class="section-title reveal">Projects that<br/>define me.</h2>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-num">01</div>
+          <div class="project-img" style="background:linear-gradient(135deg,#FF4D00,#FF8C00)"><span>🛒</span></div>
+          <div class="project-info">
+            <div class="project-tags"><span>E-Commerce</span><span>React</span><span>Node.js</span></div>
+            <h3>ShopFlow Platform</h3>
+            <p>A modern e-commerce experience with real-time inventory, AI recommendations, and buttery-smooth animations.</p>
+            <a href="#" class="project-link">View Case Study →</a>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-num">02</div>
+          <div class="project-img" style="background:linear-gradient(135deg,#7B2FFF,#B06FFF)"><span>📊</span></div>
+          <div class="project-info">
+            <div class="project-tags"><span>Dashboard</span><span>D3.js</span><span>Python</span></div>
+            <h3>DataViz Studio</h3>
+            <p>Interactive analytics dashboard handling millions of data points with real-time updates and beautiful charts.</p>
+            <a href="#" class="project-link">View Case Study →</a>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-num">03</div>
+          <div class="project-img" style="background:linear-gradient(135deg,#00C896,#00E5B0)"><span>🎵</span></div>
+          <div class="project-info">
+            <div class="project-tags"><span>Mobile App</span><span>React Native</span><span>Firebase</span></div>
+            <h3>Soundwave App</h3>
+            <p>A music discovery app with custom audio visualizations, collaborative playlists, and social listening sessions.</p>
+            <a href="#" class="project-link">View Case Study →</a>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-num">04</div>
+          <div class="project-img" style="background:linear-gradient(135deg,#FFB800,#FFD700)"><span>🌐</span></div>
+          <div class="project-info">
+            <div class="project-tags"><span>3D Web</span><span>Three.js</span><span>GLSL</span></div>
+            <h3>Luminary Brand Site</h3>
+            <p>An award-winning 3D brand experience with custom WebGL shaders, particle systems, and immersive scroll.</p>
+            <a href="#" class="project-link">View Case Study →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-tag reveal">— What I Do</div>
+      <h2 class="section-title reveal">Craft over<br/>everything.</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-icon">⚡</div>
+          <h3>Frontend Dev</h3>
+          <p>React, Next.js, TypeScript, Tailwind, Framer Motion — building fast, accessible, stunning UIs.</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="92"></div></div>
+          <span class="skill-pct">92%</span>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🔧</div>
+          <h3>Backend Dev</h3>
+          <p>Node.js, Python, PostgreSQL, Redis, REST &amp; GraphQL APIs — scalable systems done right.</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="84"></div></div>
+          <span class="skill-pct">84%</span>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🎨</div>
+          <h3>UI/UX Design</h3>
+          <p>Figma, design systems, prototyping — interfaces that are both beautiful and intuitive.</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="88"></div></div>
+          <span class="skill-pct">88%</span>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-icon">🌀</div>
+          <h3>Motion &amp; 3D</h3>
+          <p>Three.js, GSAP, WebGL, Lottie — bringing interfaces to life with physics and depth.</p>
+          <div class="skill-bar"><div class="skill-fill" data-w="76"></div></div>
+          <span class="skill-pct">76%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials section">
+    <div class="container">
+      <div class="section-tag reveal">— Kind Words</div>
+      <div class="testi-grid">
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Alex delivered a product that exceeded every expectation. The attention to detail and creative problem-solving was extraordinary."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">JM</div>
+            <div><strong>Jamie Morrison</strong><small>CEO, Luminary Co.</small></div>
+          </div>
+        </div>
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Working with Alex felt like having a superpower. The code was clean, the design was stunning, shipped ahead of schedule."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">SK</div>
+            <div><strong>Sara Kim</strong><small>Product Lead, ShopFlow</small></div>
+          </div>
+        </div>
+        <div class="testi-card reveal">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Our dashboard went from good to genuinely jaw-dropping. Users actually compliment the UI now. That never happened before."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">RP</div>
+            <div><strong>Raj Patel</strong><small>CTO, DataViz Studio</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="contact-inner">
+        <div class="section-tag reveal">— Get In Touch</div>
+        <h2 class="section-title reveal">Let's build<br/>something <em>great</em>.</h2>
+        <p class="contact-sub reveal">Have a project in mind? Send me a message and let's create something remarkable together.</p>
+        <form class="contact-form reveal" id="contact-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" placeholder="Alex Smith" required />
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" placeholder="alex@example.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" placeholder="Project Inquiry" />
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea rows="5" placeholder="Tell me about your project..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Send Message ✦</button>
+          <div class="form-success" id="form-success">✅ Message sent! I'll reply within 24 hours.</div>
+        </form>
+        <div class="contact-links reveal">
+          <a href="mailto:alex@example.com" class="contact-link">📧 alex@example.com</a>
+          <a href="#" class="contact-link">🐙 GitHub</a>
+          <a href="#" class="contact-link">💼 LinkedIn</a>
+          <a href="#" class="contact-link">🐦 Twitter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">AR<span class="dot">.</span></div>
+        <p>© 2025 Alex Rivera · Designed &amp; built with ❤️</p>
+        <button class="back-top" id="back-top">↑</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
